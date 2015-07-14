@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("../img/bg.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+body, div, header, footer, p {
+    padding: 0;
+    margin: 0 auto;
+    border: 0;
+
+}
+
+body {
+    background-color: rgba(208, 218, 221, 0.29);
+}
+
+.header {
+    background: #d0d1d0;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    opacity: 0.8;
+    z-index: 10000;
+
+}
+
+.logo {
+    float: left;
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.logo a:hover img {
+    opacity: 0.8;
+}
+
+.weibo a:hover img {
+    opacity: 0.8;
+}
+
+.weibo {
+    margin-right: 4%;
+    margin-top: 40px;
+    float: right;
+}
+
+.iphone {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.iphone a:hover img {
+    opacity: 0.8;
+}
+
+.android a:hover img {
+    opacity: 0.8;
+}
+
+.android {
+    text-align: center;
+    margin-top: 140px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* footer section */
+footer {
+    opacity: 0.6;
+    background-color: #42acf6;
+    border-top: 0px solid #E7E7E7;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    z-index: 3;
+    margin-top: 170px;
+}
+
+footer div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #5E5956;
+    text-decoration: none;
+
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+#social {
+
+    list-style: none outside none;
+    margin-top: 12px;
+    padding: 0;
+    text-align: center;
+    left: auto;
+    right: auto;
+}
+
+#weibo:hover {
+    opacity: 0.7;
+}
+
+#twitter:hover {
+    opacity: 0.7;
+}
+
+footer #privacy {
+    float: right;
+    margin-bottom: auto;
+}
+
+/* footer end */
+
