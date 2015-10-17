@@ -5,8 +5,12 @@
     <title>iAugus' Home</title>
     <link rel="shortcut icon" href="img/iAugus_logo.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript">window.__addy = {context: {mode: "#"}, requireJsMain: "home"};</script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="home" src="./js/home.js"></script><base href=".">
+    <script type="text/javascript">window.__addy = {context: {mode: "production"}, requireJsMain: "home"};</script>
+
+
 </head>
 <body class="body">
 <nav class="pi-navigation" data-menu-responsive="992">
@@ -15,15 +19,15 @@
                 class="item item-3"></span></div>
         <div class="close-menu"></div>
         <ul class="navlist">
-            <li><a href="">About</a></li>
-            <li><a href="mailto:auguscode@gmail.com">Contact</a></li>
+            <li><a href="#" id="about_me" >About</a></li>
+            <li><a href="mailto:iAugux@gmail.com">Contact</a></li>
         </ul>
         <section class="social">
-            <div class="social-networking"><a href="https://www.facebook.com/iaugus"><img src="img/facebook.png"
+            <div class="social-networking"><a href="https://www.facebook.com/iaugus"><img src="./img/facebook.png"
                                                                                           width="7px"></a><a
-                    href="https://twitter.com/AugusOO7"><img src="img/twitter.png" width="17px"></i></a><a
-                    href="http://weibo.com/augusoo7"><img src="img/weibo.png" width="17px"></i></a><a
-                    href="https://instagram.com/oaugus/"><img src="img/instagram.png" width="14px"></i></a></div>
+                    href="https://twitter.com/iAugux"><img src="./img/twitter.png" width="17px"></i></a><a
+                    href="http://weibo.com/augusoo7"><img src="./img/weibo.png" width="17px"></i></a><a
+                    href="https://instagram.com/iaugux/"><img src="./img/instagram.png" width="14px"></i></a></div>
         </section>
     </div>
 </nav>
@@ -31,21 +35,64 @@
     <section class="hero">
         <div class="center">
             <ul>
-                <li class="button"><a href="https://github.com/oAugus">Github</a></li>
+                <li class="button"><a href="https://github.com/iAugux">Github</a></li>
                 <li class="button"><a href="https://v2ex.com/member/iAugus">V2EX</a></li>
-                <li class="button"><a href="http://my.oschina.net/iAugus">OSChina</a></li>
+                <!--<li class="button"><a href="http://my.oschina.net/iAugus">OSChina</a></li>-->
+                <li class="button"><a href="http://iaugus.typify.io">Typify</a></li>
+
             </ul>
         </div>
         <div id="particles-js"></div>
 
         <!--<div class="creator">-->
-            <!--<a>Made with <img src="img/heart.png" style="width: 16px"> by iAugus</a>-->
+        <!--<a>Made with <img src="img/heart.png" style="width: 16px"> by iAugus</a>-->
         <!--</div>-->
     </section>
 </div>
-<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script src="js/require.js" data-main="js/home"></script>
+
+<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./js/scripts.js"></script>
+<script src="js/require.js" data-main="./js/home"></script>
+
+<link rel="stylesheet" href="./css/jquery.webui-popover.min.css">
+<script type="text/javascript" src="./js/jquery.webui-popover.min.js"></script>
+<script type="text/javascript">
+//    https://github.com/sandywalker/webui-popover
+    $(document).ready(function(){
+
+        var iframeSettings = {
+            trigger:'hover', // click, hover
+            title:'About me ',
+            width:500,
+            height:350,
+            multi:true,
+            style:'', // inverse
+            animation:'pop',
+            delay:{show: 200, hide: 200},
+            cache: true,
+            arrow: true,
+            closeable:false,
+            padding:false,
+            type:'iframe',
+            url:'',
+            backdrop:true
+        };
+
+        $('#about_me').webuiPopover('destroy').webuiPopover($.extend({},iframeSettings));
+    });
+</script>
+
+<!--<script>-->
+<!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+<!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+<!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+<!--})(window,document,'script','//www.google-analytics.com/analytics.js','ga');-->
+
+<!--ga('create', 'UA-65718236-1', 'auto');-->
+<!--ga('send', 'pageview');-->
+
+<!--</script>-->
+<!--<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255930575'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1255930575' type='text/javascript'%3E%3C/script%3E"));</script>-->
+
 </body>
 </html>
