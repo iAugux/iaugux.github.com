@@ -5,11 +5,10 @@
     <title>iAugus' Home</title>
     <link rel="shortcut icon" href="img/iAugus_logo.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="home" src="./js/home.js"></script><base href=".">
     <script type="text/javascript">window.__addy = {context: {mode: "production"}, requireJsMain: "home"};</script>
-
 
 </head>
 <body class="body">
@@ -21,13 +20,15 @@
         <ul class="navlist">
             <li><a href="#" id="about_me" >About</a></li>
             <li><a href="mailto:iAugux@gmail.com">Contact</a></li>
+            <li><a href="#">Resume</a></li>
         </ul>
         <section class="social">
-            <div class="social-networking"><a href="https://www.facebook.com/iaugus"><img src="./img/facebook.png"
+            <div class="social-networking"><a href="https://www.facebook.com/iAugus"><img src="./img/facebook.png"
                                                                                           width="7px"></a><a
                     href="https://twitter.com/iAugux"><img src="./img/twitter.png" width="17px"></i></a><a
-                    href="http://weibo.com/augusoo7"><img src="./img/weibo.png" width="17px"></i></a><a
-                    href="https://instagram.com/iaugux/"><img src="./img/instagram.png" width="14px"></i></a></div>
+                    href="http://weibo.com/Augusoo7"><img src="./img/weibo.png" width="17px"></i></a><a
+                    href="https://instagram.com/iAugux/"><img src="./img/instagram.png" width="14px"></i></a>
+            </div>
         </section>
     </div>
 </nav>
@@ -62,11 +63,11 @@
 
         var iframeSettings = {
             trigger:'hover', // click, hover
-            title:'About me ',
-            width:500,
-            height:350,
+            title:'About me',
+            width:450,
+            height:340,
             multi:true,
-            style:'', // inverse
+            style:'inverse', // inverse
             animation:'pop',
             delay:{show: 200, hide: 200},
             cache: true,
@@ -74,7 +75,7 @@
             closeable:false,
             padding:false,
             type:'iframe',
-            url:'',
+            url:'./about.html',
             backdrop:true
         };
 
