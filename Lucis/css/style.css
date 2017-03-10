@@ -126,6 +126,7 @@ header .carousel {
     margin-left: auto;
     padding: 100px 0px 0px 0px;
     width: 244px;
+    height: 398px;
 }
 
 header .carousel-indicators .active {
