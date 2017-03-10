@@ -126,7 +126,6 @@ header .carousel {
     margin-left: auto;
     padding: 100px 0px 0px 0px;
     width: 244px;
-    height: 398px;
 }
 
 header .carousel-indicators .active {
@@ -209,60 +208,37 @@ header .carousel-indicators li {
 /*-----------------------------------------------------------------------------------*/
 
 
+/*-----------------------------------------------------------------------------------*/
+
+
 /*	MEDIA QUERIES
 /*-----------------------------------------------------------------------------------*/
 
-@media (max-width:992px) {
-    .detail .carousel h1,
-    .detail p {
-        text-align: center;
+@media (max-width:768px) {
+    header {
+        padding: 10px 0px 0px 0px;
+        height: 580px;
+        background: url('../img/dunes.jpg');
+        background-color: white!important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
     }
-    .detail p {
-        margin-bottom: 60px;
-    }
-    header,
-    .social {
-        background-position-y: 0px;
-        background-size: 200%;
-    }
-    .payoff {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        min-height: 200px;
-    }
-    .payoff h1 {
-        font-size: 24px;
-    }
-    .features .col-md-4 {
-        margin-bottom: 60px;
-    }
-}
-
-@media (max-width:480px) {
     header .carousel-iphone,
     .detail .app-screenshot {
         width: 280px;
     }
     header .carousel,
     .detail .app-screenshot img {
-        padding-top: 85px;
-        width: 245px;
+        padding-top: 70px;
+        width: 170px;
     }
     .detail .app-screenshot img {
-        margin-top: -12px;
-        padding-top: 0px;
+        margin-top: 12px;
+        padding-top: 12px;
     }
-    header {
-        padding-top: 30px;
-        padding-bottom: 0px;
-    }
-    header h1 {
-        font-size: 70px;
-    }
-    .purchase {
-        padding-top: 50px;
-    }
-    .features col-md-4 {
-        margin-bottom: 50px;
+    .get-it {
+        padding: 40px 0px 20px 0px;
+        text-align: center;
     }
 }
