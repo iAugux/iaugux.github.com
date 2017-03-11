@@ -13,7 +13,7 @@ _/_/_/_/    _/_/_/  _/    _/    _/_/_/    _/_/_/
                                   													 
                                   													 */
 
-@import "iconfont.css";
+@import "iconfont.min.css";
 @import "animate.min.css";
 
 /*-----------------------------------------------------------------------------------*/
@@ -109,6 +109,11 @@ header h1 {
 
 header p.lead {
     font-size: 36px;
+}
+
+header a.sspai {
+    font-size: 13px;
+    color: #DF0015;
 }
 
 header .carousel-iphone {
