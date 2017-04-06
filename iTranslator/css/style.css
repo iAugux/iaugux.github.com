@@ -109,6 +109,7 @@ header h1 {
 
 header p.lead {
     font-size: 36px;
+    color: gray;
 }
 
 header .carousel-iphone {
