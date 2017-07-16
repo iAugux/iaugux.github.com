@@ -1,1 +1,147 @@
-<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title></title><style type=text/css>*{padding:0;margin:0}body{overflow:hidden;width:auto}#avatar-img{width:100px;border-radius:50%}.avatar{margin-left:12px;margin-top:10px;float:left;width:20%;pointer-events:none}.user_info{float:left;width:70%;margin-left:10px;margin-top:10px;padding-top:7px}.user_info ul li{list-style:none;letter-spacing:1px;line-height:20px}.user_info ul li a{cursor:pointer;color:rgba(255,255,255,.8);font-family:Arial;font-size:13px;font-weight:lighter;padding-top:14px;padding-left:18px;padding-right:0;text-decoration:none}.none_pointer_event{pointer-events:none}#myAge{padding:0;margin:0}.hobby{padding-top:140px;text-align:center}.hobby_title{color:rgba(255,255,255,.85);font-family:Arial;font-size:16px;font-weight:700}.hobby ul{list-style:none;width:400px;overflow:hidden;margin-left:20px}.hobby ul li{width:200px;float:left;color:rgba(255,255,255,.8);font-family:Arial;font-size:13px;font-weight:lighter;padding-top:14px;padding-right:0;text-decoration:none}</style><body><div><div class=avatar><img src=./img/avatar.jpg id=avatar-img></div><div class=user_info><ul><li><a class=none_pointer_event>Lei Wang (iAugus) /Male /</a><a id=myAge></a></li><li><a class=none_pointer_event>Swift Developer</a></li><li><a class=none_pointer_event>Graduation: Anhui University of Technology</a></li><li><a href="https://goo.gl/maps/ZDz9w64QopT2" target=_blank>Current Location: Wuhu, Anhui, China</a></li></ul><script>function getAge(e){var t=e.match(/^(\d{1,4})(-|\/)(\d{1,2})\2(\d{1,2})$/);if(null==t)return!1;var r=new Date(t[1],t[3]-1,t[4]);if(r.getFullYear()==t[1]&&r.getMonth()+1==t[3]&&r.getDate()==t[4]){var n=(new Date).getFullYear();return n-t[1]}return"error"}document.getElementById("myAge").innerHTML=getAge("1992-11-12");</script></div></div><div class=hobby><a class=hobby_title>HOBBIES & INTERESTS & FAITH</a><div><ul><li>Programming</li><li>Tearing Down & Repairing</li><li>Electronic Products</li><li>Watching Hollywood Movies</li><li>Playing Football</li><li>Watching U.S. Drama</li><li>Playing Badminton</li><li>Apple & Sony Products</li><li>Swimming</li><li>Freedom & Democracy</li><li>Military</li><li>Girls of Course, Who Doesn't ?</li></ul></div></div>
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <title></title>
+    <style type=text/css>
+        * {
+            padding: 0;
+            margin: 0
+        }
+        
+        body {
+            overflow: hidden;
+            width: auto
+        }
+        
+        #avatar-img {
+            width: 100px;
+            border-radius: 50%
+        }
+        
+        .avatar {
+            margin-left: 12px;
+            margin-top: 10px;
+            float: left;
+            width: 20%;
+            pointer-events: none
+        }
+        
+        .user_info {
+            float: left;
+            width: 70%;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-top: 7px
+        }
+        
+        .user_info ul li {
+            list-style: none;
+            letter-spacing: 1px;
+            line-height: 20px
+        }
+        
+        .user_info ul li a {
+            cursor: pointer;
+            color: rgba(255, 255, 255, .8);
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: lighter;
+            padding-top: 14px;
+            padding-left: 18px;
+            padding-right: 0;
+            text-decoration: none
+        }
+        
+        .none_pointer_event {
+            pointer-events: none
+        }
+        
+        #myAge {
+            padding: 0;
+            margin: 0
+        }
+        
+        .hobby {
+            padding-top: 140px;
+            text-align: center
+        }
+        
+        .hobby_title {
+            color: rgba(255, 255, 255, .85);
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 700
+        }
+        
+        .hobby ul {
+            list-style: none;
+            width: 400px;
+            overflow: hidden;
+            margin-left: 20px
+        }
+        
+        .hobby ul li {
+            width: 200px;
+            float: left;
+            color: rgba(255, 255, 255, .8);
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: lighter;
+            padding-top: 14px;
+            padding-right: 0;
+            text-decoration: none
+        }
+    </style>
+
+    <body>
+        <div>
+            <div class=avatar><img src=./img/avatar.jpg id=avatar-img></div>
+            <div class=user_info>
+                <ul>
+                    <li><a class=none_pointer_event>Lei Wang (iAugus) /Male /</a>
+                        <a id=myAge></a>
+                    </li>
+                    <li><a class=none_pointer_event>Swift Developer</a></li>
+                    <li><a class=none_pointer_event>Graduation: Anhui University of Technology</a></li>
+                    <li><a href="https://goo.gl/maps/ZDz9w64QopT2" target=_blank>Current Location: Wuhu, Anhui, China</a></li>
+                </ul>
+                <script>
+                    function calculate_age(birth_month, birth_day, birth_year) {
+                        today_date = new Date();
+                        today_year = today_date.getFullYear();
+                        today_month = today_date.getMonth();
+                        today_day = today_date.getDate();
+                        age = today_year - birth_year;
+
+                        if (today_month < (birth_month - 1)) {
+                            age--;
+                        }
+                        if (((birth_month - 1) == today_month) && (today_day < birth_day)) {
+                            age--;
+                        }
+                        return age;
+                    }
+                    document.getElementById("myAge").innerHTML = calculate_age(11, 12, 1992); // 1992-11-12
+                </script>
+            </div>
+        </div>
+        <div class=hobby><a class=hobby_title>HOBBIES & INTERESTS & FAITH</a>
+            <div>
+                <ul>
+                    <li>Programming</li>
+                    <li>Tearing Down & Repairing</li>
+                    <li>Electronic Products</li>
+                    <li>Watching Hollywood Movies</li>
+                    <li>Playing Football</li>
+                    <li>Watching U.S. Drama</li>
+                    <li>Playing Badminton</li>
+                    <li>Apple & Sony Products</li>
+                    <li>Swimming</li>
+                    <li>Freedom & Democracy</li>
+                    <li>Military</li>
+                    <li>Girls of Course, Who Doesn't ?</li>
+                </ul>
+            </div>
+        </div>
