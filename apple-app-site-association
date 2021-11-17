@@ -1,18 +1,1 @@
-{
-    "applinks": {
-        "details": [{
-            "appIDs": ["J4Z2NCTR3S.com.iAugus.xSearch"],
-            "components": [{
-                    "#": "*",
-                    "exclude": true
-                },
-                {
-                    "/": "/xsearch/*",
-                    "?": {
-                        "open": "*"
-                    }
-                }
-            ]
-        }]
-    }
-}
+{"applinks":{"apps":[],"details":[{"appIDs":["J4Z2NCTR3S.com.iAugus.xSearch"],"components":[{"#":"*","exclude":true},{"/":"/xsearch/*","?":{"open":"*"}}]}]}}
