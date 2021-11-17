@@ -1,0 +1,21 @@
+{
+    "applinks": {
+        "details": [{
+            "appIDs": ["J4Z2NCTR3S.com.iAugus.xSearch"],
+            "components": [{
+                    "#": "*",
+                    "exclude": true
+                },
+                {
+                    "/": "/xsearch/*",
+                    "?": {
+                        "open": "*"
+                    }
+                }
+            ]
+        }]
+    },
+    "webcredentials": {
+        "apps": ["J4Z2NCTR3S.com.iAugus.xSearch"]
+    }
+}
