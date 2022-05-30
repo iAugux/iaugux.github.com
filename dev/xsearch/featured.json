@@ -1,8 +1,2 @@
 [
-    {
-        "shortcuts": ["y", "you"],
-        "title": "You",
-        "mobile": "https://you.com/search?q=%s",
-        "definition": "**You**.com is a search engine that summarizes the best parts of the internet for **you**, without ads and with great privacy. Our AI will help **you find** the most relevant results from the web and apps that **you** can sort and prioritize for optimum search experience. We believe that you should control your search: your privacy, results, and time."
-    }
 ]
