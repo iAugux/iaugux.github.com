@@ -1,2 +1,10 @@
 [
+    {
+        "shortcuts": [
+            "ph"
+        ],
+        "title": "Phind",
+        "mobile": "https://www.phind.com/search?q=%s",
+        "definition": "The AI search engine for developers."
+    }
 ]
