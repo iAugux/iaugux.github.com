@@ -1,18 +1,1 @@
-[
-    {
-        "shortcuts": [
-            "ph"
-        ],
-        "title": "Phind",
-        "mobile": "https://www.phind.com/search?q=%s",
-        "definition": "The AI search engine for developers."
-    },
-    {
-        "shortcuts": [
-            "openverse"
-        ],
-        "title": "Openverse",
-        "mobile": "https://openverse.org/search/?q=%s",
-        "definition": "Openverse is a tool that allows openly licensed and public domain works to be discovered and used by everyone."
-    }
-]
+
