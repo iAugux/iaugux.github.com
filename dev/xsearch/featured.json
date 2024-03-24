@@ -1,2 +1,19 @@
 [
+    {
+        "shortcuts": [
+            "pp",
+            "perplexity"
+        ],
+        "title": "Perplexity",
+        "mobile": "https://www.perplexity.ai/search?q=%s",
+        "definition": "An AI-powered research and conversational search engine."
+    },
+    {
+        "shortcuts": [
+            "ph"
+        ],
+        "title": "Phind",
+        "mobile": "https://www.phind.com/search?q=%s",
+        "definition": "The AI search engine for developers."
+    }
 ]
