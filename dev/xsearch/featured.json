@@ -7,7 +7,7 @@
         "title": "ChatGPT",
         "mobile": "https://chat.openai.com/?q=%s",
         "favicon": "chat.openai.com",
-        "definition": "ChatGPT is an advanced language model designed to interact with users in natural language. Developed by OpenAI, it leverages state-of-the-art deep learning techniques to understand and generate human-like text responses across a wide range of topics and tasks. Whether engaging in casual conversation, providing information, or assisting with creative writing, ChatGPT aims to facilitate meaningful and engaging interactions, showcasing the capabilities of artificial intelligence in understanding and producing natural language.\n\n⚠ Signing into your account is required prior to proceeding."
+        "definition": "ChatGPT is an advanced language model designed to interact with users in natural language. Developed by OpenAI, it leverages state-of-the-art deep learning techniques to understand and generate human-like text responses across a wide range of topics and tasks. Whether engaging in casual conversation, providing information, or assisting with creative writing, ChatGPT aims to facilitate meaningful and engaging interactions, showcasing the capabilities of artificial intelligence in understanding and producing natural language."
     },
     {
         "shortcuts": [
