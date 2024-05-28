@@ -1,2 +1,20 @@
 [
+    {
+        "shortcuts": [
+            "gpt",
+            "chatgpt"
+        ],
+        "title": "ChatGPT",
+        "mobile": "https://chatgpt.com/?q=%s",
+        "definition": "ChatGPT is an advanced language model designed to interact with users in natural language. Developed by OpenAI, it leverages state-of-the-art deep learning techniques to understand and generate human-like text responses across a wide range of topics and tasks. Whether engaging in casual conversation, providing information, or assisting with creative writing, ChatGPT aims to facilitate meaningful and engaging interactions, showcasing the capabilities of artificial intelligence in understanding and producing natural language."
+    },
+    {
+        "shortcuts": [
+            "pp",
+            "perplexity"
+        ],
+        "title": "Perplexity",
+        "mobile": "https://www.perplexity.ai/search?q=%s",
+        "definition": "An AI-powered research and conversational search engine."
+    }
 ]
