@@ -18,12 +18,19 @@
         "definition": "An AI-powered research and conversational search engine."
     },
     {
-        "mobile" : "https://www.bing.com/search?showconv=1&sendquery=1&q=%s",
-        "shortcuts" : [
-              "copilot"
+        "mobile": "https://www.bing.com/search?showconv=1&sendquery=1&q=%s",
+        "shortcuts": [
+            "copilot"
         ],
-        "favicon" : "copilot.microsoft.com",
-        "title" : "Microsoft Copilot",
+        "favicon": "copilot.microsoft.com",
+        "title": "Microsoft Copilot",
         "definition": "Microsoft Copilot in Bing Chat is an AI-powered assistant that helps users with various tasks and queries directly within Bing. It leverages advanced AI models to provide contextual responses, streamline search results, and offer personalized assistance based on user input. Copilot can help with drafting content, answering questions, and generating summaries, enhancing the overall search and productivity experience within Bing."
+    },
+    {
+        "shortcuts": [
+            "genspark"
+        ],
+        "title": "Genspark",
+        "mobile": "https://www.genspark.ai/search?query=%s"
     }
 ]
