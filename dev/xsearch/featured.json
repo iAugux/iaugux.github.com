@@ -25,10 +25,5 @@
         "favicon" : "copilot.microsoft.com",
         "title" : "Microsoft Copilot",
         "definition": "Microsoft Copilot in Bing Chat is an AI-powered assistant that helps users with various tasks and queries directly within Bing. It leverages advanced AI models to provide contextual responses, streamline search results, and offer personalized assistance based on user input. Copilot can help with drafting content, answering questions, and generating summaries, enhancing the overall search and productivity experience within Bing."
-    },
-    {
-        "mobile": "https://you.com/search?q=%s&tbm=youchat&chatMode=default",
-        "title": "You Chat",
-        "shortcuts": ["youchat"]
     }
 ]
