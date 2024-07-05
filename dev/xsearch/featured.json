@@ -1,6 +1,15 @@
 [
     {
         "shortcuts": [
+            "cld",
+            "claude"
+        ],
+        "title": "Claude",
+        "mobile": "https://claude.ai/new?q=%s",
+        "definition": "Claude is an advanced AI designed to assist with various tasks, from individual brainstorming to large team projects. It offers capabilities in advanced reasoning, vision analysis, code generation, and multilingual processing. The Claude model family includes Haiku for lightweight actions, Sonnet for efficient high-throughput tasks, and Opus for complex analyses. Claude is secure, trustworthy, and reliable, with features like SOC 2 Type II certification and HIPAA compliance. Anthropic, the creator of Claude, ensures high standards of integrity and security, making Claude suitable for business-critical applications."
+    },
+    {
+        "shortcuts": [
             "gpt",
             "chatgpt"
         ],
