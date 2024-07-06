@@ -46,7 +46,7 @@
         "shortcuts": [
             "ddgchat"
         ],
-        "title": "DuckDuckGo Chat",
+        "title": "DuckDuckGo AI Chat",
         "mobile": "https://duckduckgo.com/?q=%s&ia=chat&bang=true"
     }
 ]
