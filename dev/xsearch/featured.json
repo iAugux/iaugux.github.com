@@ -48,5 +48,12 @@
         ],
         "title": "DuckDuckGo AI Chat",
         "mobile": "https://duckduckgo.com/?q=%s&ia=chat&bang=true"
+    },
+    {
+        "shortcuts": [
+            "gpttemp",
+        ],
+        "title": "ChatGPT Temporary Chat",
+        "mobile": "https://chatgpt.com/?q=%s&temporary-chat=true"
     }
 ]
