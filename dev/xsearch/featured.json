@@ -61,6 +61,6 @@
             "exa"
         ],
         "title": "Exa AI",
-        "mobile: "https://exa.ai/search?q=%s"
+        "mobile": "https://exa.ai/search?q=%s"
     }
 ]
