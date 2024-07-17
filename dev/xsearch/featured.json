@@ -55,5 +55,12 @@
         ],
         "title": "ChatGPT Temporary Chat",
         "mobile": "https://chatgpt.com/?q=%s&temporary-chat=true"
+    },
+    {
+        "shortcuts": [
+            "exa"
+        ],
+        "title": "Exa AI",
+        "mobile: "https://exa.ai/search?q=%s"
     }
 ]
