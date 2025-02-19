@@ -1,6 +1,14 @@
 [
     {
         "shortcuts": [
+            "grok",
+        ],
+        "title": "Grok",
+        "mobile": "https://grok.com/?q=%s",
+        "definition": "Grok, crafted by xAI, is an AI with a unique perspective on humanity, designed to answer nearly any question with maximum helpfulness."
+    },
+    {
+        "shortcuts": [
             "cld",
             "claude"
         ],
