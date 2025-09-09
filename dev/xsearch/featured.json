@@ -6,7 +6,7 @@
         "title": "Google AI Mode (by Gemini)",
         "favicon": "gemini.google",
         "mobile": "https://www.google.com/search?udm=50&source=searchlabs&q=%s",
-        "definition": "To use Google's AI Mode, sign in to your Google account and opt-in to the AI Mode experiment in Search Labs."
+        "definition": "To use Google's AI features, sign in to your Google Account. AI Overviews will appear automatically at the top of many search results."
     },
     {
         "shortcuts": [
