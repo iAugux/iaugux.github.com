@@ -54,13 +54,6 @@
     },
     {
         "shortcuts": [
-            "genspark"
-        ],
-        "title": "Genspark",
-        "mobile": "https://www.genspark.ai/search?query=%s"
-    },
-    {
-        "shortcuts": [
             "ddgchat"
         ],
         "title": "DuckDuckGo AI Chat",
