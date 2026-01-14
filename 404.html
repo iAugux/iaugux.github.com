@@ -89,7 +89,7 @@
     <main class="main">
         <div class="not-found">404</div>
     </main>
-    <footer class="footer"><span>&copy; 2024 iAugus</span> ·</footer><a href="#top" aria-label="go to top"
+    <footer class="footer"><span>&copy; <span id="currentYear"></span> iAugus</span> ·</footer><a href="#top" aria-label="go to top"
         title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g"><svg xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 12 6" fill="currentColor">
             <path d="M12 6H0l6-6z" /></svg></a>
@@ -139,6 +139,13 @@
                 localStorage.setItem("pref-theme", 'dark');
             }
         })
+    </script>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Update the content of the element with id "currentYear"
+        document.getElementById("currentYear").textContent = currentYear;
     </script>
 </body>
 
