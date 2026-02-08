@@ -1,64 +1,211 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+:root {
+  --bg: #f4f7ff;
+  --surface: #ffffff;
+  --surface-muted: #f8faff;
+  --text: #1f2937;
+  --text-soft: #5a6473;
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --border: #d9e1f2;
+  --shadow: 0 20px 50px rgba(37, 99, 235, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1100px 550px at 20% -10%, #dbeafe 0%, transparent 60%),
+    radial-gradient(700px 500px at 90% 0%, #e0e7ff 0%, transparent 55%),
+    var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  padding: 4rem 1.25rem 2.5rem;
+}
+
+.hero__inner,
+.container,
+.footer {
+  width: min(960px, 100% - 2rem);
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--brand-dark);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+h1 {
+  margin: 0.4rem 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+.hero__subtitle {
+  margin: 0;
+  max-width: 700px;
+  color: var(--text-soft);
+  font-size: clamp(1rem, 2.3vw, 1.15rem);
+}
+
+.container {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  box-shadow: var(--shadow);
+}
+
+.card--subtle {
+  background: var(--surface-muted);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.2rem, 3vw, 1.45rem);
+}
+
+.section-text {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.contact-grid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-card {
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(160deg, #ffffff 0%, #f6f9ff 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  border-color: #b9c9ef;
+  box-shadow: 0 14px 26px rgba(37, 99, 235, 0.12);
+}
+
+.contact-card:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}
+
+.contact-card__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.contact-card p {
+  margin: 0.45rem 0 0.65rem;
+  color: var(--text-soft);
+}
+
+.contact-card__cta {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.checklist {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 0 2rem;
+  color: #6b7280;
+  text-align: center;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 3rem;
   }
-  
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #111a2b;
+    --surface-muted: #0f1726;
+    --text: #e5e7eb;
+    --text-soft: #94a3b8;
+    --brand: #60a5fa;
+    --brand-dark: #93c5fd;
+    --border: #23314d;
+    --shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  }
+
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background:
+      radial-gradient(900px 500px at 15% -5%, rgba(37, 99, 235, 0.2) 0%, transparent 60%),
+      radial-gradient(800px 500px at 90% 0%, rgba(99, 102, 241, 0.16) 0%, transparent 55%),
+      var(--bg);
   }
-  
-  header {
-    background-color: #4CAF50;
-    padding: 1rem;
+
+  .contact-card {
+    background: linear-gradient(160deg, #111d32 0%, #101a2c 100%);
   }
-  
-  header h1 {
-    color: #fff;
+
+  .contact-card__icon {
+    background: #182846;
+    color: #dbeafe;
   }
-  
-  main {
-    padding: 2rem;
-    flex: 1;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  .contact-options {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-  }
-  
-  .contact-option {
-    width: 40%;
-  }
-  
-  .contact-option a {
-    display: block;
-    color: #4CAF50;
-    text-decoration: none;
-    margin-top: 0.5rem;
-  }
-  
-  .contact-option a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+}

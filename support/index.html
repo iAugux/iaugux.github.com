@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Support</title>
+    <meta name="description" content="Official iAugus app support page with contact options and quick help steps.">
+    <meta name="theme-color" content="#0f172a">
+    <title>iAugus App Support</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <h1>App Support</h1>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__inner">
+        <a class="brand" href="https://iAugus.com/" aria-label="Visit iAugus homepage">iAugus</a>
+        <p class="eyebrow">App Support</p>
+        <h1>We&rsquo;re here to help</h1>
+        <p class="hero__subtitle">
+          Need help with one of our apps? Reach out anytime and we&rsquo;ll do our best to respond quickly.
+        </p>
+      </div>
     </header>
-    <main>
-        <section>
-            <h2>Contact Us</h2>
-            <p>For any inquiries or support, please feel free to reach out to us via email or Twitter:</p>
-            <div class="contact-options">
-                <div class="contact-option">
-                    <h3>Email</h3>
-                    <a href="mailto:iAugux@gmail.com">iAugux@gmail.com</a>
-                </div>
-                <div class="contact-option">
-                    <h3>Twitter</h3>
-                    <a href="https://twitter.com/iAugux" target="_blank">@iAugux</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>iAugus &copy; <span id="currentYear"></span>. All rights reserved.</p>
-        <script>
-            var currentYear = new Date().getFullYear();
-            document.getElementById("currentYear").textContent = currentYear;
-        </script>
-    </footer>
-</body>
 
+    <main class="container" aria-label="Support Content">
+      <section class="card">
+        <h2>Contact Options</h2>
+        <p class="section-text">
+          Choose your preferred way to contact us. Include your device model, iOS version, app version, and a short
+          description of the issue for faster support.
+        </p>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:iAugux@gmail.com">
+            <span class="contact-card__icon" aria-hidden="true">✉️</span>
+            <h3>Email Support</h3>
+            <p>iAugux@gmail.com</p>
+            <span class="contact-card__cta">Send Email</span>
+          </a>
+
+          <a class="contact-card" href="https://x.com/iAugux" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__icon" aria-hidden="true">𝕏</span>
+            <h3>Message on X</h3>
+            <p>@iAugux</p>
+            <span class="contact-card__cta">Open Profile</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="card card--subtle">
+        <h2>Quick Checklist</h2>
+        <ul class="checklist">
+          <li>Update to the latest app version from the App Store.</li>
+          <li>Restart the app and your device, then try again.</li>
+          <li>Send screenshots and steps to reproduce the issue.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="currentYear"></span> iAugus. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
