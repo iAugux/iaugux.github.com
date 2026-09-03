@@ -3,10 +3,10 @@
         "shortcuts": [
             "gemini",
         ],
-        "title": "Google AI Mode (by Gemini)",
+        "title": "Google Gemini",
         "favicon": "gemini.google",
         "mobile": "https://www.google.com/search?udm=50&source=searchlabs&q=%s",
-        "definition": "To use Google's AI features, sign in to your Google Account. AI Overviews will appear automatically at the top of many search results."
+        "definition": "Search with Google AI Mode for AI-powered answers, follow-up questions, and deeper exploration."
     },
     {
         "shortcuts": [
