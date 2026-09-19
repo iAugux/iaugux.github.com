@@ -19,6 +19,14 @@
     },
     {
         "shortcuts": [
+            "duckai"
+        ],
+        "title": "Duck.ai",
+        "mobile": "https://duck.ai/chat?ia=chat&home=1&prompt=1&q=%s",
+        "definition": "Duck.ai is a privacy-focused feature for having private, anonymized conversations with third-party AI chat models."
+    },
+    {
+        "shortcuts": [
             "cld",
             "claude"
         ],
